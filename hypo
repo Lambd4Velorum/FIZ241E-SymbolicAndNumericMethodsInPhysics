@@ -1,0 +1,32 @@
+#include <iostream>
+#include <fstream>
+#include <cmath>
+using namespace std;
+
+double hypotenuse(double a, double b)
+{
+return(pow(a*a+b*b,0.5));
+}
+
+int main()
+{
+double x,y,hyp;
+cout<<"Enter X";
+cin>>x;
+cout<<"ENter y";
+cin<<y;
+if (x>0 && y>0)
+{
+hyp=hypotenuse(x,y);
+cout<<hyp;
+ofstream.open("hypo.txt");
+outfile<<hyp;
+outfile.close();
+}
+else
+{
+cout<<"no triangle";
+}
+
+return 0;
+}
